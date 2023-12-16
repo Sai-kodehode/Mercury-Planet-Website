@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/Space\ Background\ GIF\ image.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav img {
+  width: 150px;
+  height: 100px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style-position: none;
+  display: inline;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-links ul li a:hover {
+  background: rgba(213, 193, 193, 0.608);
+}
+
+.text-box {
+  color: aliceblue;
+  position: absolute;
+  /* text-align: left; */
+  font-size: 30px;
+  display: flex;
+}
+text-box h1 {
+  font-size: x-large;
+}
+
+.points ul li {
+  padding: 20px 80px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.facts-image img {
+  display: inline-block;
+  justify-content: right;
+  align-items: end;
+  width: 500px;
+  height: 500px;
+}
+/* Pictures */
+.Pictures {
+  margin: auto;
+  padding-top: 10px;
+  width: 500px;
+  height: 100vh;
+}
+.Pictures h1 {
+  font-size: x-large;
+}
+
+.Pictures h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  width: 100%;
+
+  padding: 15px 0px;
+  background: rgb(62, 62, 62);
+}
+/* .github-icon {
+  color: red;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 20 px 0px;
+} */
+
+.Scalability {
+  margin: auto;
+  padding-top: 10px;
+  width: 500px;
+  height: 100vh;
+}
+.facts-section {
+  width: 500px;
+  height: 100vh;
+  display: inline-block;
+}
+
+/* write code from here */
