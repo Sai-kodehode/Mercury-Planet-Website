@@ -7,8 +7,7 @@ const nextButton = document.getElementById("next-button");
 
 function showImage(index) {
   currentIndex = (index + images.length) % images.length; //  images.length = the total number of images in the array (4). Uses the "modulo" operator (divider), with remainders.
-  const imagePath = "images/" + images[currentIndex];
-  slideshowImage.src = imagePath;
+  slideshowImage.src = "images/" + images[currentIndex];
   slideshowImage.alt = `Image ${currentIndex + 1}`;
 }
 
