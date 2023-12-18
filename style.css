@@ -81,8 +81,18 @@ nav img {
 
 /* Pictures */
 
-#image-slideshow {
+#image-slideshow h1 {
+  color: aliceblue;
+  padding: 20px 150px;
+  font-size: 30px;
 }
+
+#image-slideshow h2 {
+  color: aliceblue;
+  padding: 20px 150px;
+  font-size: 25px;
+}
+
 #slideshow-image {
   max-width: 700px;
   max-height: 700px;
@@ -114,14 +124,43 @@ nav img {
 /* Footer */
 .footer {
   width: 100%;
+  text-align: center;
 
   padding: 15px 0px;
-  background: rgb(62, 62, 62);
+  background: rgb(165, 165, 165);
 }
 
-.Scalability {
+.footer h4 {
+  display: inline;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   padding-top: 10px;
   width: 500px;
   height: 100vh;
+}
+#scal {
+  /* width: 500px; */
+  height: 100vh;
+}
+
+#scal h1 {
+  color: aliceblue;
+  padding: 20px 150px;
+  font-size: 30px;
+}
+
+#scal h2 {
+  color: aliceblue;
+  padding: 20px 150px;
+  font-size: 25px;
+}
+
+.footer a i {
+  font-size: 30px;
+  vertical-align: middle;
 }
