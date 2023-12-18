@@ -14,14 +14,14 @@
 }
 nav {
   display: flex;
-  padding: 30px 40px;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
 }
 
 nav img {
   width: 150px;
-  height: 100px;
+  height: 150px;
 }
 
 .nav-links {
@@ -44,15 +44,16 @@ nav img {
   background: rgba(213, 193, 193, 0.608);
 }
 
-.text-box {
+.facts-section {
   color: aliceblue;
   position: absolute;
   /* text-align: left; */
   font-size: 30px;
   display: flex;
 }
-text-box h1 {
-  font-size: x-large;
+.facts-section h1 {
+  font-size: xx-large;
+  text-align: center;
 }
 
 .points ul li {
@@ -62,7 +63,6 @@ text-box h1 {
 }
 
 .facts-image img {
-  display: inline-block;
   justify-content: right;
   align-items: end;
   width: 500px;
@@ -70,8 +70,9 @@ text-box h1 {
 }
 /* Pictures */
 #slideshow-image {
-max-width: 300px;
-max-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
 }
 
 .section2 {
@@ -118,3 +119,17 @@ max-height: 300px;
 }
 
 /* write code from here */
+
+/* To make image and points side by side */
+
+.imagesection1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* all-sections */
+.all-sections {
+  display: flex;
+  flex-direction: column;
+}
