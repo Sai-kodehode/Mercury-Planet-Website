@@ -187,3 +187,45 @@ nav img {
   font-size: 30px;
   vertical-align: middle;
 }
+
+/* Section 3 styling */
+#comparisonBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border: 2px solid red;
+  margin: 20px auto;
+}
+
+.planet {
+  border-radius: 50%;
+  border: 2px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+#mercury {
+  background-image: url(images/mercury-bg.jpg);
+  width: 50px; /* Mercury's size as a base */
+  height: 50px;
+}
+
+#planetSelector {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#planetDropdown {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.size-info {
+  color: #d3b6fa;
+  position: relative;
+  text-align: center;
+  font-size: x-large;
+}

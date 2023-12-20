@@ -58,7 +58,7 @@
           <button id="prev-button">Previous</button>
           <img id="slideshow-image" src="images/image1.png" alt="Image 1" />
           <button id="next-button">Next</button>
-          <script src="script.js"></script>
+          <script src="section2script.js"></script>
         </div>
       </section>
 
@@ -67,6 +67,24 @@
       <section id="scal">
         <h1>Scalability</h1>
         <h2>We can see weight comparisiton with other planets</h2>
+        <div id="planetSelector">
+          <select id="planetDropdown">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+          </select>
+        </div>
+        <div id="comparisonBox">
+          <div id="mercury" class="planet"></div>
+          <div id="chosenPlanet" class="planet"></div>
+        </div>
+        <div id="sizeInfo" class="size-info"></div>
+        <script src="section3script.js"></script>
       </section>
     </div>
 
