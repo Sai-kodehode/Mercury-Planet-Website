@@ -11,82 +11,81 @@
     />
     <link rel="icon" type="image/x-icon" href="images/Favicon-Mercury.png" />
   </head>
+
   <body>
-    <div class="background-image">
-      <div class="navbar">
-        <nav>
-          <a href="index.html"><img src="images/Mercury-Logo.png" alt="" /></a>
-          <div class="nav-links">
-            <ul>
-              <li><a href="#fact">Facts</a></li>
-              <li><a href="#image-slideshow">Pictures</a></li>
-              <li><a href="#scal">Scalability</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Section1 -->
-
-      <section id="fact">
-        <div class="text-box">
+    <div class="navbar">
+      <nav>
+        <a href="index.html"><img src="images/Mercury-Logo.png" alt="" /></a>
+        <div class="nav-links">
           <ul>
-            <!-- sai --- need to update -->
-            <h1>Facts about Mercury ✔️</h1>
-            <li>Closest to Sun 🌞</li>
-            <li>Extreme Temperatures ♨️</li>
-            <li>No Atmosphere 🏐</li>
-            <li>Rocky Surface 🪨</li>
-            <li>Fast Orbit 💣</li>
-            <li>Slow Rotation 🐢</li>
-            <li>Minimal Gravity 🚰</li>
-            <li>No Liquid Water 🚰</li>
-            <li>Extensive Cratering 🥀</li>
+            <li><a href="#fact">Facts</a></li>
+            <li><a href="#image-slideshow">Pictures</a></li>
+            <li><a href="#scal">Size Comparision</a></li>
           </ul>
-          <img src="images/Mercury1.webp" alt="Mercury-image" />
         </div>
-      </section>
-
-      <!-- continue from here, i havent dont anything for section2 and 3 -->
-      <!-- Section-2    -->
-
-      <section id="image-slideshow">
-        <!-- sai --- need to update icons -->
-        <h1>Pictures 📷</h1>
-        <h2>We can see different Types of Pictures 🔀</h2>
-        <div class="section2">
-          <button id="prev-button">Previous</button>
-          <img id="slideshow-image" src="images/image1.png" alt="Image 1" />
-          <button id="next-button">Next</button>
-          <script src="section2script.js"></script>
-        </div>
-      </section>
-
-      <!-- Section-3 -->
-
-      <section id="scal">
-        <h1>Scalability</h1>
-        <h2>We can see weight comparisiton with other planets</h2>
-        <div id="planetSelector">
-          <select id="planetDropdown">
-            <option value="mercury">Mercury</option>
-            <option value="venus">Venus</option>
-            <option value="earth">Earth</option>
-            <option value="mars">Mars</option>
-            <option value="jupiter">Jupiter</option>
-            <option value="saturn">Saturn</option>
-            <option value="uranus">Uranus</option>
-            <option value="neptune">Neptune</option>
-          </select>
-        </div>
-        <div id="comparisonBox">
-          <div id="mercury" class="planet"></div>
-          <div id="chosenPlanet" class="planet"></div>
-        </div>
-        <div id="sizeInfo" class="size-info"></div>
-        <script src="section3script.js"></script>
-      </section>
+      </nav>
     </div>
+
+    <!-- Section1 -->
+
+    <section id="fact" class="background-image">
+      <div class="text-box">
+        <h1>Facts about Mercury ✔️</h1>
+        <ul>
+          <!-- sai --- need to update -->
+          <li>Closest to Sun 🌞</li>
+          <li>Extreme Temperatures ♨️</li>
+          <li>No Atmosphere 🏐</li>
+          <li>Rocky Surface 🪨</li>
+          <li>Fast Orbit 💣</li>
+          <li>Slow Rotation 🐢</li>
+          <li>Minimal Gravity 🪂</li>
+          <li>No Liquid Water 🚰</li>
+          <li>Extensive Cratering 🥀</li>
+        </ul>
+        <img src="images/Mercury1.jpg" class="rotate-img" alt="Mercury-image" />
+      </div>
+    </section>
+
+    <!-- continue from here, i havent dont anything for section2 and 3 -->
+    <!-- Section-2    -->
+
+    <section id="image-slideshow" class="background-image">
+      <!-- sai --- need to update icons -->
+      <h1>Pictures 📷</h1>
+      <h2>We can see different Types of Pictures 🔀</h2>
+      <div class="section2">
+        <button id="prev-button">Previous</button>
+        <img id="slideshow-image" src="images/image1.png" alt="Image 1" />
+        <button id="next-button">Next</button>
+        <script src="section2script.js"></script>
+      </div>
+    </section>
+
+    <!-- Section-3 -->
+
+    <section id="scal" class="background-image">
+      <h1>Size Comparision</h1>
+      <!-- <h2>We can see size comparisiton with other planets</h2> -->
+      <div id="planetSelector">
+        <select id="planetDropdown">
+          <option value="mercury">Mercury</option>
+          <option value="venus">Venus</option>
+          <option value="earth">Earth</option>
+          <option value="mars">Mars</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="saturn">Saturn</option>
+          <option value="uranus">Uranus</option>
+          <option value="neptune">Neptune</option>
+        </select>
+      </div>
+      <div id="comparisonBox">
+        <div id="mercury" class="planet"></div>
+        <div id="chosenPlanet" class="planet"></div>
+      </div>
+      <div id="sizeInfo" class="size-info"></div>
+      <script src="section3script.js"></script>
+    </section>
 
     <!--  Footer -->
     <section class="footer">
