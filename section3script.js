@@ -35,20 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     chosenPlanetDiv.style.height = `${newSize}px`;
     chosenPlanetDiv.style.backgroundImage = `url('${planetImages[selectedPlanet]}')`;
 
-    if (selectedPlanet !== "mercury") {
-      sizeInfoDiv.textContent = `The planet ${capitalizeFirstLetter(
-        selectedPlanet
-      )} is ${sizeMultiplier} times bigger than Mercury.`;
-    } else {
-      sizeInfoDiv.textContent = ""; // Clear text if Mercury is selected
-    }
+    sizeInfoDiv.textContent = `The planet ${capitalizeFirstLetter(
+      selectedPlanet
+    )} is ${sizeMultiplier} times bigger than Mercury.`;
   });
 
-  // Initialize with Mercury as default
-  chosenPlanetDiv.style.width = `${mercurySize * planetSizes["mercury"]}px`;
-  chosenPlanetDiv.style.height = `${mercurySize * planetSizes["mercury"]}px`;
-  chosenPlanetDiv.style.backgroundImage = `url('${planetImages["mercury"]}')`;
-  sizeInfoDiv.textContent = "";
+  // Initialize with Earth as default
+  chosenPlanetDiv.style.width = `${mercurySize * planetSizes["earth"]}px`;
+  chosenPlanetDiv.style.height = `${mercurySize * planetSizes["earth"]}px`;
+  chosenPlanetDiv.style.backgroundImage = `url('${planetImages["earth"]}')`;
+  dropdown.value = "earth";
+  sizeInfoDiv.textContent = `The planet Earth is 2.6 times bigger than Mercury.`;
 
   // Function to capitalize the first letter of a string (for planet names)
   function capitalizeFirstLetter(string) {

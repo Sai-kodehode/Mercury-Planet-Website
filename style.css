@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  /* flex-grow: 0;
-  flex-shrink: 0; */
   margin: 0;
   padding: 0;
 }
@@ -43,7 +41,6 @@ nav img {
 .nav-links ul li {
   list-style-position: none;
   display: inline;
-
   padding: 10px 20px;
   position: relative;
 }
@@ -53,11 +50,12 @@ nav img {
   text-decoration: none;
   font-size: 25px;
 }
+
 .nav-links ul li a:hover {
   background: #473a76;
 }
+
 #fact {
-  z-index: 2;
   padding: 50px 100px;
   height: auto;
   overflow: hidden;
@@ -77,6 +75,7 @@ nav img {
   text-align: center;
   padding: 20px 80px 20px 0;
 }
+
 .text-box ul li {
   color: #d3b6fa;
   padding: 20px 180px;
