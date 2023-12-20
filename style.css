@@ -17,6 +17,8 @@ html {
 .navbar {
   position: sticky;
   top: 0;
+  /* sai-need to add color */
+  background: #000011;
 }
 nav {
   display: flex;
@@ -37,20 +39,24 @@ nav img {
 .nav-links ul li {
   list-style-position: none;
   display: inline;
+
   padding: 10px 20px;
   position: relative;
 }
 
 .nav-links ul li a {
-  color: white;
+  /* sai----need to update the color */
+  color: #c6d4da;
   text-decoration: none;
   font-size: 30px;
 }
 .nav-links ul li a:hover {
-  background: rgba(213, 193, 193, 0.608);
+  /* sai --- need to update color */
+  background: #473a76;
 }
 #fact {
-  padding: 20px 0px;
+  /* sai --- nedd to update margin on section */
+  padding: 150px 0px;
 }
 
 .text-box {
@@ -60,13 +66,18 @@ nav img {
 }
 
 .text-box h1 {
-  color: aliceblue;
+  /* sai --- need to update the color */
+  color: #d3b6fa;
   font-size: 50px;
   font-size: xx-large;
   padding: 20px 80px;
+
+  /* sai --- need to update margin top while scrolling */
+  /* margin-top: 110px; */
 }
 .text-box ul li {
-  color: aliceblue;
+  /* sai --- need to update the color */
+  color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
   list-style-type: disc;
@@ -80,15 +91,21 @@ nav img {
 }
 
 /* Pictures */
+#image-slideshow {
+  /* sai --- need to update padding on the section2 */
+  padding: 150px 0px;
+}
 
 #image-slideshow h1 {
-  color: aliceblue;
+  /* sai --- need to update */
+  color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
 }
 
 #image-slideshow h2 {
-  color: aliceblue;
+  /* sai --- need to update */
+  color: #d3b6fa;
   padding: 20px 150px;
   font-size: 25px;
 }
@@ -113,10 +130,13 @@ nav img {
   padding: 10px 20px;
   margin: 20px;
   border-radius: 70%;
+  /* sai --- need to update */
   border: 2px solid black;
-  background: rgb(73, 57, 57);
+
+  /* sai --- need to update */
+  background: rgb(243, 243, 243);
   opacity: 20%;
-  color: rgb(252, 252, 252);
+  color: #d50000;
   font-weight: 800;
   font-size: 25px;
 }
@@ -146,16 +166,19 @@ nav img {
 #scal {
   /* width: 500px; */
   height: 100vh;
+  padding: 150px 0px;
 }
 
 #scal h1 {
-  color: aliceblue;
+  /* Sai --- need to update the color */
+  color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
 }
 
 #scal h2 {
-  color: aliceblue;
+  /* sai ---need to update the color */
+  color: #d3b6fa;
   padding: 20px 150px;
   font-size: 25px;
 }
