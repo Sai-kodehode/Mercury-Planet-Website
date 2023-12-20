@@ -1,4 +1,7 @@
 * {
+  box-sizing: border-box;
+  /* flex-grow: 0;
+  flex-shrink: 0; */
   margin: 0;
   padding: 0;
 }
@@ -54,8 +57,10 @@ nav img {
   background: #473a76;
 }
 #fact {
+  z-index: 2;
   padding: 50px 100px;
-  height: 100vh;
+  height: auto;
+  overflow: hidden;
 }
 
 .text-box {
@@ -81,8 +86,9 @@ nav img {
 }
 
 .text-box img {
-  width: 700px;
-  height: 700px;
+  position: relative;
+  max-height: 50%;
+  max-width: 50%;
   border-radius: 50%;
 }
 
@@ -104,7 +110,7 @@ nav img {
 /* Pictures */
 #image-slideshow {
   padding: 50px 0px;
-  height: 100vh;
+  height: auto;
 }
 
 #image-slideshow h1 {
@@ -164,7 +170,7 @@ nav img {
 }
 
 #scal {
-  height: 100vh;
+  height: auto;
   padding: 50px 0px;
 }
 
