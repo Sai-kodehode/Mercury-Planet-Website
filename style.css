@@ -11,17 +11,13 @@ html {
   background-image: url(images/Space\ Background\ GIF\ image.gif);
   background-position: center;
   background-size: cover;
-  /* opacity: 0.8; */
-  /* z-index: -1; */
   background-repeat: no-repeat;
   position: relative;
 }
 .navbar {
   position: sticky;
   top: 0;
-  /* sai-need to add color */
   background: #262634;
-  /* opacity: 80%; */
   z-index: 1;
   height: 60px;
 }
@@ -50,21 +46,16 @@ nav img {
 }
 
 .nav-links ul li a {
-  /* sai----need to update the color */
   color: #c6d4da;
   text-decoration: none;
   font-size: 25px;
 }
 .nav-links ul li a:hover {
-  /* sai --- need to update color */
   background: #473a76;
 }
 #fact {
-  /* sai --- nedd to update margin on section */
   padding: 50px 100px;
   height: 100vh;
-  /* margin: 0 60px; */
-  /* z-index: 1; */
 }
 
 .text-box {
@@ -75,18 +66,13 @@ nav img {
 }
 
 .text-box h1 {
-  /* sai --- need to update the color */
   color: #d3b6fa;
   font-size: 50px;
   font-size: xx-large;
   text-align: center;
   padding: 20px 80px 20px 0;
-
-  /* sai --- need to update margin top while scrolling */
-  /* margin-top: 110px; */
 }
 .text-box ul li {
-  /* sai --- need to update the color */
   color: #d3b6fa;
   padding: 20px 180px;
   font-size: 30px;
@@ -99,6 +85,8 @@ nav img {
   height: 700px;
   border-radius: 50%;
 }
+
+/* Animating the image on section1 */
 
 @keyframes rotateImage {
   from {
@@ -115,13 +103,11 @@ nav img {
 
 /* Pictures */
 #image-slideshow {
-  /* sai --- need to update padding on the section2 */
   padding: 50px 0px;
   height: 100vh;
 }
 
 #image-slideshow h1 {
-  /* sai --- need to update */
   color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
@@ -129,7 +115,6 @@ nav img {
 }
 
 #image-slideshow h2 {
-  /* sai --- need to update */
   color: #d3b6fa;
   padding: 20px 150px;
   font-size: 25px;
@@ -149,17 +134,13 @@ nav img {
   margin: auto;
   padding-top: 50px;
   width: 500px;
-  /* height: 100vh; */
 }
 
 .section2 button {
   padding: 10px 20px;
   margin: 20px;
   border-radius: 70%;
-  /* sai --- need to update */
   border: 6px solid #d3b6fa;
-
-  /* sai --- need to update */
   background: rgb(29, 29, 29);
   opacity: 100%;
   color: #d3b6fa;
@@ -171,9 +152,11 @@ nav img {
 .footer {
   width: 100%;
   text-align: center;
-
   padding: 15px 0px;
   background: rgb(165, 165, 165);
+  opacity: 70%;
+  color: #432768;
+  font-weight: bolder;
 }
 
 .footer h4 {
@@ -181,13 +164,11 @@ nav img {
 }
 
 #scal {
-  /* width: 500px; */
   height: 100vh;
   padding: 50px 0px;
 }
 
 #scal h1 {
-  /* Sai --- need to update the color */
   color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
@@ -195,7 +176,6 @@ nav img {
 }
 
 #scal h2 {
-  /* sai ---need to update the color */
   color: #d3b6fa;
   padding: 20px 150px;
   font-size: 25px;
@@ -215,7 +195,6 @@ nav img {
   width: 100%;
   max-width: 800px;
   height: 600px;
-  /* border: 2px solid red; */
   margin: 20px auto;
 }
 
