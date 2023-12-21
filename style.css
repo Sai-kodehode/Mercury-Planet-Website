@@ -1,3 +1,4 @@
+/* BASIC STYLING */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,8 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* BACKGROUND IMAGE */
 .background-image {
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   background-image: url(images/Space\ Background\ GIF\ image.gif);
   background-position: center;
@@ -15,6 +17,8 @@ html {
   background-repeat: no-repeat;
   position: relative;
 }
+
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -34,6 +38,11 @@ nav img {
   height: 60px;
 }
 
+nav img:hover {
+  width: 80px;
+  height: 80px;
+}
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -43,6 +52,7 @@ nav img {
   display: inline;
   padding: 10px 20px;
   position: relative;
+  height: 50vh;
 }
 
 .nav-links ul li a {
@@ -53,11 +63,12 @@ nav img {
 
 .nav-links ul li a:hover {
   background: #473a76;
+  font-size: 30px;
+  color: aliceblue;
 }
-
-#fact {
-  padding: 50px 100px;
-  height: auto;
+/* SECTION 1 */
+#section1 {
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -66,6 +77,7 @@ nav img {
   justify-content: space-around;
   align-items: center;
   margin-right: 250px;
+  height: 100vh;
 }
 
 .text-box h1 {
@@ -82,16 +94,18 @@ nav img {
   font-size: 30px;
   list-style-type: disc;
   list-style-position: inside;
+  white-space: nowrap;
+  line-height: 10px;
 }
 
 .text-box img {
   position: relative;
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 500px;
+  max-width: 500px;
   border-radius: 50%;
 }
 
-/* Animating the image on section1 */
+/* ROTATING IMAGE IN SECTION 1 */
 
 @keyframes rotateImage {
   from {
@@ -105,30 +119,23 @@ nav img {
 .rotate-img {
   animation: rotateImage 25s linear infinite;
 }
-
-/* Pictures */
+/* SECTION 2 */
+/* PICTURES IN SECTION 2*/
 #image-slideshow {
   padding: 50px 0px;
-  height: auto;
+  height: 100vh;
 }
 
 #image-slideshow h1 {
   color: #d3b6fa;
-  padding: 20px 150px;
+  padding: 80px 150px;
   font-size: 30px;
   text-align: center;
 }
 
-#image-slideshow h2 {
-  color: #d3b6fa;
-  padding: 20px 150px;
-  font-size: 25px;
-  text-align: center;
-}
-
 #slideshow-image {
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
 }
 
@@ -137,7 +144,7 @@ nav img {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   width: 500px;
 }
 
@@ -153,46 +160,21 @@ nav img {
   font-size: 25px;
 }
 
-/* Footer */
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0px;
-  background: rgb(165, 165, 165);
-  opacity: 70%;
-  color: #432768;
-  font-weight: bolder;
-}
-
-.footer h4 {
-  display: inline;
-}
-
-#scal {
-  height: auto;
+/* SECTION 3 */
+/* STYLE */
+#section3-style {
+  height: 100vh;
   padding: 50px 0px;
 }
 
-#scal h1 {
+#section3-style h1 {
   color: #d3b6fa;
   padding: 20px 150px;
   font-size: 30px;
   text-align: center;
 }
 
-#scal h2 {
-  color: #d3b6fa;
-  padding: 20px 150px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.footer a i {
-  font-size: 30px;
-  vertical-align: middle;
-}
-
-/* Section 3 styling */
+/* SIZE COMPARISON */
 #comparisonBox {
   display: flex;
   align-items: center;
@@ -203,17 +185,18 @@ nav img {
   margin: 20px auto;
 }
 
-.planet {
-  border-radius: 50%;
-  border: 2px solid black;
-  background-size: cover;
-  background-position: center;
-}
-
 #mercury {
   background-image: url(images/mercury-bg.jpg);
   width: 50px; /* Mercury's size as a base */
   height: 50px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.planet {
+  border-radius: 50%;
+  border: 2px solid rgb(248, 236, 226);
+  background-size: cover;
+  background-position: center;
 }
 
 #planetSelector {
@@ -228,12 +211,38 @@ nav img {
   color: #510da9;
   border: 2px solid blueviolet;
   border-radius: 20px;
+  margin: 40px;
 }
 
+/* TEXT FOR PLANET COMPARISON */
 .size-info {
   color: #d3b6fa;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Roboto Slab", serif;
   position: relative;
   text-align: center;
   font-size: 30px;
+}
+
+.size-info:hover {
+  font-size: 35px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+  background: rgb(165, 165, 165);
+  opacity: 70%;
+  color: #432768;
+  font-weight: bolder;
+}
+
+.footer a i {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.footer h4 {
+  display: inline;
 }
