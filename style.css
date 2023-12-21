@@ -128,7 +128,7 @@ nav img:hover {
 
 #image-slideshow h1 {
   color: #d3b6fa;
-  padding: 80px 150px;
+  padding: 20px 150px;
   font-size: 30px;
   text-align: center;
 }
@@ -144,7 +144,7 @@ nav img:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 500px;
 }
 
