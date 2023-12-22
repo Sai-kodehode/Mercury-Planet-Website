@@ -46,18 +46,11 @@ nav img:hover {
   height: 80px;
 }
 
-/* need to check */
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
 .nav-links ul li {
   list-style-position: none;
   display: inline;
   padding: 10px 20px;
   position: relative;
-  /* need to check */
-  height: 50vh;
 }
 
 :root {
@@ -189,8 +182,8 @@ nav img:hover {
   justify-content: space-around;
   width: 100%;
   max-width: 800px;
-  height: 600px;
-  margin: 20px auto;
+  height: 450px;
+  margin: 10px auto;
 }
 
 #mercury {
@@ -213,14 +206,12 @@ nav img:hover {
 }
 
 #planetDropdown {
-  padding: 10px 12px;
+  padding: 5px 7px;
   font-size: 25px;
   background: var(--purple);
   color: #510da9;
   border: 6px solid var(--purple);
   border-radius: 20px;
-  /* need to check */
-  /* margin: 40px; */
 }
 
 /* TEXT FOR PLANET COMPARISON */
@@ -252,9 +243,9 @@ nav img:hover {
 }
 
 .footer a i:hover {
-  font-size: 50px;
+  font-size: 40px;
 }
-/* need to check */
+
 .footer h4 {
   display: inline;
 }

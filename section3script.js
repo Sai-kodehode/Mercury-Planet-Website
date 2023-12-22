@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     neptune: "images/neptune-bg.jpg",
   };
 
-  const mercurySize = 50; // Base size in pixels for Mercury
+  const mercurySize = 40; // Base size in pixels for Mercury
   const dropdown = document.getElementById("planetDropdown");
   const chosenPlanetDiv = document.getElementById("chosenPlanet");
   const sizeInfoDiv = document.getElementById("sizeInfo");
