@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Roboto Slab", serif;
+}
 /* BACKGROUND IMAGE */
 .background-image {
   max-height: 100vh;
@@ -43,6 +46,7 @@ nav img:hover {
   height: 80px;
 }
 
+/* need to check */
 .nav-links {
   flex: 1;
   text-align: right;
@@ -52,19 +56,23 @@ nav img:hover {
   display: inline;
   padding: 10px 20px;
   position: relative;
+  /* need to check */
   height: 50vh;
 }
 
+:root {
+  --purple: #d3b6fa;
+}
+
 .nav-links ul li a {
-  color: #c6d4da;
+  color: var(--purple);
   text-decoration: none;
   font-size: 25px;
 }
 
 .nav-links ul li a:hover {
-  background: #473a76;
+  background: black;
   font-size: 30px;
-  color: aliceblue;
 }
 /* SECTION 1 */
 #section1 {
@@ -81,7 +89,7 @@ nav img:hover {
 }
 
 .text-box h1 {
-  color: #d3b6fa;
+  color: var(--purple);
   font-size: 50px;
   font-size: xx-large;
   text-align: center;
@@ -89,13 +97,13 @@ nav img:hover {
 }
 
 .text-box ul li {
-  color: #d3b6fa;
+  color: var(--purple);
   padding: 20px 180px;
   font-size: 30px;
   list-style-type: disc;
   list-style-position: inside;
   white-space: nowrap;
-  line-height: 10px;
+  line-height: 15px;
 }
 
 .text-box img {
@@ -127,7 +135,7 @@ nav img:hover {
 }
 
 #image-slideshow h1 {
-  color: #d3b6fa;
+  color: var(--purple);
   padding: 20px 150px;
   font-size: 30px;
   text-align: center;
@@ -152,10 +160,10 @@ nav img:hover {
   padding: 10px 20px;
   margin: 20px;
   border-radius: 70%;
-  border: 6px solid #d3b6fa;
+  border: 6px solid var(--purple);
   background: rgb(29, 29, 29);
   opacity: 100%;
-  color: #d3b6fa;
+  color: var(--purple);
   font-weight: 600;
   font-size: 25px;
 }
@@ -168,7 +176,7 @@ nav img:hover {
 }
 
 #section3-style h1 {
-  color: #d3b6fa;
+  color: var(--purple);
   padding: 20px 150px;
   font-size: 30px;
   text-align: center;
@@ -207,17 +215,17 @@ nav img:hover {
 #planetDropdown {
   padding: 10px 12px;
   font-size: 25px;
-  background: #c6d4da;
+  background: var(--purple);
   color: #510da9;
-  border: 2px solid blueviolet;
+  border: 6px solid var(--purple);
   border-radius: 20px;
-  margin: 40px;
+  /* need to check */
+  /* margin: 40px; */
 }
 
 /* TEXT FOR PLANET COMPARISON */
 .size-info {
-  color: #d3b6fa;
-  font-family: "Roboto Slab", serif;
+  color: var(--purple);
   position: relative;
   text-align: center;
   font-size: 30px;
@@ -243,6 +251,10 @@ nav img:hover {
   vertical-align: middle;
 }
 
+.footer a i:hover {
+  font-size: 50px;
+}
+/* need to check */
 .footer h4 {
   display: inline;
 }
