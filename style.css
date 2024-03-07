@@ -1,4 +1,3 @@
-/* BASIC STYLING */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +9,9 @@ html {
 body {
   font-family: "Roboto Slab", serif;
 }
-/* BACKGROUND IMAGE */
+/* background image */
 .background-image {
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-image: url(images/Space\ Background\ GIF\ image.gif);
   background-position: center;
@@ -21,7 +20,7 @@ body {
   position: relative;
 }
 
-/* NAVBAR */
+/* navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -41,11 +40,6 @@ nav img {
   height: 60px;
 }
 
-nav img:hover {
-  width: 80px;
-  height: 80px;
-}
-
 .nav-links ul li {
   list-style-position: none;
   display: inline;
@@ -60,14 +54,14 @@ nav img:hover {
 .nav-links ul li a {
   color: var(--purple);
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .nav-links ul li a:hover {
   background: black;
-  font-size: 30px;
+  color: antiquewhite;
 }
-/* SECTION 1 */
+/* section1 */
 #section1 {
   height: 100vh;
   overflow: hidden;
@@ -75,24 +69,30 @@ nav img:hover {
 
 .text-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 250px;
+  /* margin-right: 250px; */
   height: 100vh;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .text-box h1 {
   color: var(--purple);
+  margin: 0 auto;
   font-size: 50px;
   font-size: xx-large;
   text-align: center;
-  padding: 20px 80px 20px 0;
+  min-width: fit-content;
+  text-wrap: nowrap;
+  /* padding: 20px 80px 20px 0; */
 }
 
 .text-box ul li {
   color: var(--purple);
-  padding: 20px 180px;
-  font-size: 30px;
+  padding: 20px 0px;
+  margin-left: 20px;
+  font-size: 20px;
   list-style-type: disc;
   list-style-position: inside;
   white-space: nowrap;
@@ -100,13 +100,13 @@ nav img:hover {
 }
 
 .text-box img {
-  position: relative;
-  max-height: 500px;
-  max-width: 500px;
+  /* position: relative; */
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 50%;
 }
 
-/* ROTATING IMAGE IN SECTION 1 */
+/* making image to rotate in section1 */
 
 @keyframes rotateImage {
   from {
@@ -120,11 +120,10 @@ nav img:hover {
 .rotate-img {
   animation: rotateImage 25s linear infinite;
 }
-/* SECTION 2 */
-/* PICTURES IN SECTION 2*/
+/* section2 */
 #image-slideshow {
   padding: 50px 0px;
-  height: 100vh;
+  height: auto;
 }
 
 #image-slideshow h1 {
@@ -135,8 +134,8 @@ nav img:hover {
 }
 
 #slideshow-image {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 400px;
   border-radius: 50%;
 }
 
@@ -144,9 +143,10 @@ nav img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding-top: 50px;
-  width: 500px;
+  /* margin: auto; */
+  padding-top: 10px;
+  width: 100%;
+  height: 100vh;
 }
 
 .section2 button {
@@ -161,34 +161,33 @@ nav img:hover {
   font-size: 25px;
 }
 
-/* SECTION 3 */
-/* STYLE */
+/* section3 */
 #section3-style {
-  height: 100vh;
+  height: auto;
   padding: 50px 0px;
 }
 
 #section3-style h1 {
   color: var(--purple);
   padding: 20px 150px;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
 }
 
-/* SIZE COMPARISON */
+/* size comparision */
 #comparisonBox {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   max-width: 800px;
-  height: 450px;
-  margin: 10px auto;
+  height: 100vh;
+  margin: 0px auto;
 }
 
 #mercury {
   background-image: url(images/mercury-bg.jpg);
-  width: 50px; /* Mercury's size as a base */
+  width: 50px;
   height: 50px;
   border: 2px solid rgb(180, 180, 180);
 }
@@ -202,31 +201,27 @@ nav img:hover {
 
 #planetSelector {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #planetDropdown {
-  padding: 5px 7px;
-  font-size: 25px;
+  padding: 1px 7px;
+  font-size: 20px;
   background: var(--purple);
   color: #510da9;
   border: 6px solid var(--purple);
   border-radius: 20px;
 }
 
-/* TEXT FOR PLANET COMPARISON */
+/* planet comparision info text */
 .size-info {
   color: var(--purple);
   position: relative;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
-.size-info:hover {
-  font-size: 35px;
-}
-
-/* FOOTER SECTION */
+/* footer */
 .footer {
   width: 100%;
   text-align: center;
@@ -248,4 +243,93 @@ nav img:hover {
 
 .footer h4 {
   display: inline;
+}
+
+@media (max-width: 860px) {
+  body {
+    font-size: 14px; /* Adjust the base font size for smaller screens */
+  }
+
+  .background-image {
+    height: 50vh;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .nav-links ul li {
+    padding: 5px 10px;
+  }
+
+  .text-box {
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-box h1 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .text-box ul li {
+    padding: 10px;
+    margin-left: 30px;
+  }
+
+  .text-box img {
+    margin-top: 100px;
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  #image-slideshow h1 {
+    padding: 20px;
+    font-size: 26px;
+  }
+
+  #slideshow-image {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .section2 {
+    height: 100vh;
+  }
+
+  .section2 button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  #section3-style h1 {
+    padding: 20px;
+    font-size: 26px;
+  }
+
+  #comparisonBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .size-info {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer a i {
+    font-size: 20px;
+  }
+
+  .footer h4 {
+    display: block;
+  }
 }
