@@ -257,11 +257,16 @@ nav img {
   .navbar {
     height: 60px;
   }
+  nav ul {
+    min-width: 200px;
+  }
 
   .nav-links ul li {
     padding: 5px 10px;
   }
-
+  .nav-links ul li a {
+    font-size: 16px;
+  }
   .text-box {
     margin: 0 auto;
     height: auto;
